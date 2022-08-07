@@ -72,7 +72,7 @@ string GenerateWord(){
 	srand(time(0));
 	int i = 1, iEntry, iFileEntries = 0;
 
-	ifstream aString("/storage/6466-6234/Computer Programs/theStrFile.str", ios::in);
+	ifstream aString("theStrFile.str", ios::in);
 	if(!aString){
 		cerr << "Sorry, I can't open the input file to this program!" << endl;
 		exit(1);
@@ -87,7 +87,7 @@ string GenerateWord(){
 
 	iEntry = rand() % iFileEntries;
 
-	ifstream aString2("/storage/6466-6234/Computer Programs/theStrFile.str", ios::in);
+	ifstream aString2("theStrFile.str", ios::in);
 	if(!aString2){
 		cerr << "Sorry, I can't open the input file to this program!" << endl;
 		exit(1);
